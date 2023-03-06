@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="interface_8h" kind="file" language="C++">
+    <compoundname>interface.h</compoundname>
+    <includes refid="dados_8h" local="yes">dados.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="dados_8c" local="yes">dados.c</includedby>
+    <includedby refid="interface_8c" local="yes">interface.c</includedby>
+    <includedby refid="logica_8c" local="yes">logica.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>dados.h</label>
+        <link refid="dados_8h"/>
+      </node>
+      <node id="1">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="interface_8h_1aa0b6c1689e60ac852a73d67e066c1df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mostrar_tabuleiro</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>mostrar_tabuleiro</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funçao que imprime o tabuleiro <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="19" column="6" bodyfile="interface.c" bodystart="13" bodyend="36" declfile="interface.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a24da95ebeede4a540e37790ce8be359b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int interpretador</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>interpretador</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funçao que desenvolve o jogo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>do jogo desenvolvido jogada após jogada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="25" column="5" bodyfile="interface.c" bodystart="264" bodyend="328" declfile="interface.h" declline="25" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1aa21a7978b37c0a46dc2c65e8e63f01fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int prompt</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>prompt</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>funçao que indica o numero de jogadas e o numero atual de jogadas <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>do turno do jogador e da ronda atual </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="31" column="5" bodyfile="interface.c" bodystart="39" bodyend="45" declfile="interface.h" declline="31" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1aeb5899aea74d8c1fc2e2d60e3e5ef6b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler</definition>
+        <argsstring>(ESTADO *e, char nome[])</argsstring>
+        <name>ler</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>nome</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>lê um ficheiro com o estado do tabuleiro e os movimetos <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nome</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nome do ficheiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="37" column="6" bodyfile="interface.c" bodystart="109" bodyend="152" declfile="interface.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1aac4b0d39be667a26989f9b5ff6f086e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gravar</definition>
+        <argsstring>(ESTADO *e, char *nome)</argsstring>
+        <name>gravar</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>nome</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>grava num ficheiro o estado do tabuleiro e os moviemtos que levaram a dito estado <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nome</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nome do ficheiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="43" column="6" bodyfile="interface.c" bodystart="155" bodyend="188" declfile="interface.h" declline="43" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1ae97ab9fbf280fae4e7a6e92741a33ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void movs</definition>
+        <argsstring>(ESTADO *e, char nome[])</argsstring>
+        <name>movs</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>nome</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cria um ficheiro para utilizar a aux <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nome</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nome do ficheiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="49" column="6" bodyfile="interface.c" bodystart="96" bodyend="106" declfile="interface.h" declline="49" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1aec7faeac41b37d4d330a296cc8af1601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr_jogada</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>gr_jogada</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>grava a coordenada que acabou de ser jogada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="55" column="6" bodyfile="interface.c" bodystart="69" bodyend="77" declfile="interface.h" declline="55" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1ad0079b7aa0b97daa94fa4f7449822e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aux</definition>
+        <argsstring>(FILE *mov, ESTADO *e)</argsstring>
+        <name>aux</name>
+        <param>
+          <type>FILE *</type>
+          <declname>mov</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>guarda num ficheiro os movimentos até o comando ser executado <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mov</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="61" column="6" bodyfile="interface.c" bodystart="80" bodyend="94" declfile="interface.h" declline="61" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a48a4ae68456e88d3c3130626e6f423eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* pos</definition>
+        <argsstring>(ESTADO *e, int n)</argsstring>
+        <name>pos</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>deixa jogar apartir de uma jogada anterior <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero de jogada que se quer reverter o tabuleiro </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>tabuleiro com a posiçao da jogada inserida </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="68" column="8" bodyfile="interface.c" bodystart="191" bodyend="200" declfile="interface.h" declline="68" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a683dfebc4a54a48ccc179c3cf24c4314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+        <definition>LL JP</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>JP</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>guarda todas as jogadas possiveis <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>lista ligadas com todas as jogadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="74" column="4" bodyfile="interface.c" bodystart="203" bodyend="252" declfile="interface.h" declline="74" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a75a3c6feb2f2ec713f96559558b136d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jog2</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>jog2</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>chama o bot com a euristica de prever jogadas segundo um padrão <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="79" column="6" bodyfile="interface.c" bodystart="259" bodyend="261" declfile="interface.h" declline="79" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1ae5b112e62e34c8da0cda7f6efb16b0cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jog1</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>jog1</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>chama o bot com a euristica de menor distancia euclidiana <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="interface.h" line="84" column="6" bodyfile="interface.c" bodystart="254" bodyend="256" declfile="interface.h" declline="84" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Funções que alteram a interface do jogo </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>luisf<sp/>on<sp/>3/11/2020.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dados_8h" kindref="compound">dados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PROJETO_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJETO_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aa0b6c1689e60ac852a73d67e066c1df5" kindref="member">mostrar_tabuleiro</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a24da95ebeede4a540e37790ce8be359b" kindref="member">interpretador</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="31"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aa21a7978b37c0a46dc2c65e8e63f01fc" kindref="member">prompt</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="37"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aeb5899aea74d8c1fc2e2d60e3e5ef6b6" kindref="member">ler</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nome[]);</highlight></codeline>
+<codeline lineno="43"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aac4b0d39be667a26989f9b5ff6f086e3" kindref="member">gravar</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*nome);</highlight></codeline>
+<codeline lineno="49"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1ae97ab9fbf280fae4e7a6e92741a33ade" kindref="member">movs</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nome[]);</highlight></codeline>
+<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aec7faeac41b37d4d330a296cc8af1601" kindref="member">gr_jogada</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="61"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1ad0079b7aa0b97daa94fa4f7449822e8e" kindref="member">aux</ref>(FILE<sp/>*mov,<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref>*<sp/><ref refid="interface_8h_1a48a4ae68456e88d3c3130626e6f423eb" kindref="member">pos</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="structlligada" kindref="compound">LL</ref><sp/><ref refid="interface_8h_1a683dfebc4a54a48ccc179c3cf24c4314" kindref="member">JP</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="79"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a75a3c6feb2f2ec713f96559558b136d0" kindref="member">jog2</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="84"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1ae5b112e62e34c8da0cda7f6efb16b0cc" kindref="member">jog1</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//PROJETO_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="interface.h"/>
+  </compounddef>
+</doxygen>

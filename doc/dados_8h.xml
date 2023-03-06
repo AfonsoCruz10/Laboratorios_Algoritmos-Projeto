@@ -1,0 +1,753 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dados_8h" kind="file" language="C++">
+    <compoundname>dados.h</compoundname>
+    <includedby refid="interface_8h" local="yes">interface.h</includedby>
+    <includedby refid="logica_8h" local="yes">logica.h</includedby>
+    <includedby refid="dados_8c" local="yes">dados.c</includedby>
+    <includedby refid="interface_8c" local="yes">interface.c</includedby>
+    <includedby refid="logica_8c" local="yes">logica.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>dados.h</label>
+        <link refid="dados_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>logica.h</label>
+        <link refid="logica_8h"/>
+      </node>
+      <node id="2">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_c_o_o_r_d_e_n_a_d_a" prot="public">COORDENADA</innerclass>
+    <innerclass refid="struct_j_o_g_a_d_a" prot="public">JOGADA</innerclass>
+    <innerclass refid="struct_e_s_t_a_d_o" prot="public">ESTADO</innerclass>
+    <innerclass refid="structlligada" prot="public">lligada</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="dados_8h_1ab8d2e03f1be6ed043ab77a0ea6d0c3fd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ERROS</name>
+        <enumvalue id="dados_8h_1ab8d2e03f1be6ed043ab77a0ea6d0c3fda2bc49ec37d6a5715dd23e85f1ff5bb59" prot="public">
+          <name>OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dados_8h_1ab8d2e03f1be6ed043ab77a0ea6d0c3fda79ebb08f197afde2120c3a89f2528890" prot="public">
+          <name>COORDENADA_INVALIDA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dados_8h_1ab8d2e03f1be6ed043ab77a0ea6d0c3fda402a7096ff471024cb93e6034b6008e2" prot="public">
+          <name>JOGADA_INVALIDA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dados_8h_1ab8d2e03f1be6ed043ab77a0ea6d0c3fdaa11c2bf2a8de9395382caef85ccdeb59" prot="public">
+          <name>ERRO_LER_TAB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dados_8h_1ab8d2e03f1be6ed043ab77a0ea6d0c3fdac2135f62387f11d7f60a020e2f828e66" prot="public">
+          <name>ERRO_ABRIR_FICHEIRO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Tipo de dados para os erros. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="15" column="14" bodyfile="dados.h" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="enum" id="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CASA</name>
+        <enumvalue id="dados_8h_1aba91601f16d4c485b2d9b8c429f27039ab620e38b0268bee43c7e9a88bd6e73fa" prot="public">
+          <name>UM</name>
+          <initializer>= &apos;1&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dados_8h_1aba91601f16d4c485b2d9b8c429f27039a2bf153109d0c8b96e61bc18d5be7c5da" prot="public">
+          <name>DOIS</name>
+          <initializer>= &apos;2&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dados_8h_1aba91601f16d4c485b2d9b8c429f27039abc711f491a56ec7af7a688be508c5113" prot="public">
+          <name>VAZIO</name>
+          <initializer>= &apos;.&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dados_8h_1aba91601f16d4c485b2d9b8c429f27039ad24485fddec75419fd4a0cc9edda0ca5" prot="public">
+          <name>BRANCA</name>
+          <initializer>= &apos;*&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dados_8h_1aba91601f16d4c485b2d9b8c429f27039a007278eb3827d19891b47cdd3ac8846d" prot="public">
+          <name>PRETA</name>
+          <initializer>= &apos;#&apos;</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Tipo de dados para a casa. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="26" column="14" bodyfile="dados.h" bodystart="26" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dados_8h_1a94c221d29a1760f008b7834093259b7d" prot="public" static="no">
+        <type><ref refid="struct_j_o_g_a_d_a" kindref="compound">JOGADA</ref></type>
+        <definition>typedef JOGADA JOGADAS[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>JOGADAS</name>
+        <briefdescription>
+<para>Tipo de dados para as jogadas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="52" column="16" bodyfile="dados.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" prot="public" static="no">
+        <type>struct <ref refid="structlligada" kindref="compound">lligada</ref> *</type>
+        <definition>typedef struct lligada * LL</definition>
+        <argsstring></argsstring>
+        <name>LL</name>
+        <briefdescription>
+<para>Tipo de dados para o comando jog. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="77" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dados_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* inicializar_estado</definition>
+        <argsstring>()</argsstring>
+        <name>inicializar_estado</name>
+        <briefdescription>
+<para>Inicializa o valor do estado Esta função inicializa o valor do estado. Isso implica o tabuleiro ser colocado na posição inicial e todos os campos do estado estarem com o valor por omissão. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>O novo estado </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="84" column="8" bodyfile="dados.c" bodystart="12" bodyend="28" declfile="dados.h" declline="84" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1acc6c25533188a99cb69c12e7f2c406ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_jogador_atual</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>obter_jogador_atual</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indica o jogador atual <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>apontador para o estado em que se vai buscar o jogador atual antes de atualizado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>o jogador atual para ser usado no prompt </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="90" column="5" bodyfile="dados.c" bodystart="31" bodyend="35" declfile="dados.h" declline="90" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1a6faa68373203923729ed38657aa0f768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref></type>
+        <definition>CASA obter_estado_casa</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>obter_estado_casa</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indica o estado da casa <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>estado da casa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="97" column="6" bodyfile="dados.c" bodystart="38" bodyend="45" declfile="dados.h" declline="97" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1a6cd0b387bdee9e18003c78852394aa63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_numero_de_jogadas</definition>
+        <argsstring>(ESTADO *estado)</argsstring>
+        <name>obter_numero_de_jogadas</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>estado</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indica o numero de jogadas de cada jogador <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>estado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>o numero de jogadas antes da jogada atual </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>numero de jogadas ao fim da jogada atual </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="103" column="5" bodyfile="dados.c" bodystart="48" bodyend="54" declfile="dados.h" declline="103" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1a9ed45c12e676bcd825ac17cc0b6c2124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+        <definition>LL criar_lista</definition>
+        <argsstring>()</argsstring>
+        <name>criar_lista</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cria uma lista ligada <simplesect kind="return"><para>de uma lista ligada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="108" column="4" bodyfile="dados.c" bodystart="57" bodyend="60" declfile="dados.h" declline="108" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1a3a5211f8d4cd34243a3a6e91d6cbc8f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+        <definition>LL insere_cabeca</definition>
+        <argsstring>(COORDENADA v, LL t)</argsstring>
+        <name>insere_cabeca</name>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>insere uma cabeça na lista <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coordenada que insere na lista </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lista em que é inserida </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>lista com a cabeça </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="115" column="4" bodyfile="dados.c" bodystart="63" bodyend="70" declfile="dados.h" declline="115" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1a660a5c936fd1706c040fe0e5d4f31f25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA devolve_cabeca</definition>
+        <argsstring>(LL t)</argsstring>
+        <name>devolve_cabeca</name>
+        <param>
+          <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>vai buscar uma cabeça a uma lista ligada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lista onde vai buscar a cabeça </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>coordenada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="121" column="12" bodyfile="dados.c" bodystart="73" bodyend="75" declfile="dados.h" declline="121" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1ab159cd6b637efeccf9ae0fa531e2260f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+        <definition>LL proximo</definition>
+        <argsstring>(LL t)</argsstring>
+        <name>proximo</name>
+        <param>
+          <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>vai buscar o proxime elemento da lista <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lista a que vai buscar o elemento </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>o proximo elemento </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="127" column="4" bodyfile="dados.c" bodystart="78" bodyend="80" declfile="dados.h" declline="127" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1a82ee51f4fe0ec59472bea9f47c7c4b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+        <definition>LL remove_cabeca</definition>
+        <argsstring>(LL t)</argsstring>
+        <name>remove_cabeca</name>
+        <param>
+          <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>remove a cabeça de uma lista <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lista ligada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>lista sem a cabeça </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="133" column="4" bodyfile="dados.c" bodystart="83" bodyend="88" declfile="dados.h" declline="133" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1aede27ab39a75dd12f1c417919090583c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lista_esta_vazia</definition>
+        <argsstring>(LL t)</argsstring>
+        <name>lista_esta_vazia</name>
+        <param>
+          <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>diz se a lista está vazia ou nao <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lista ligada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 ou 0 dependendo se é verdade ou nao </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="139" column="5" bodyfile="dados.c" bodystart="91" bodyend="94" declfile="dados.h" declline="139" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1a972a9e8d2ae7ab66947907b9068c9986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int validar_bot</definition>
+        <argsstring>(ESTADO *e, int a, int b)</argsstring>
+        <name>validar_bot</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>valida se as jogadas do bot são validas <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linha da jogada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coluna da jogada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 ou 0 dependendo se é valida ou não </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="147" column="5" bodyfile="dados.c" bodystart="97" bodyend="100" declfile="dados.h" declline="147" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1a8bbf17045f6fff45258a698f4bd6aa57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int inception</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>inception</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>verifica se uma jogada dá vitoria quando o comando jog é usado <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>falso se não for vitoria ou entao o jogador vencedor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="153" column="5" bodyfile="dados.c" bodystart="103" bodyend="123" declfile="dados.h" declline="153" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1af1704b4ad23e77613c228199ed06b7dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int inception2</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>inception2</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>verifica se uma jogada cria um espaço fechado no tabuleiro <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>numero de espaços fechados </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="159" column="5" bodyfile="dados.c" bodystart="126" bodyend="135" declfile="dados.h" declline="159" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1af44a9284a8bf9c4a4e07c3a4e2278b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+        <definition>LL copiaL</definition>
+        <argsstring>(LL t)</argsstring>
+        <name>copiaL</name>
+        <param>
+          <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copia os dados de uma lista para outra lista <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lista ligada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>lista ligada com o mesmo conteudo da lista inserida </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="165" column="4" bodyfile="dados.c" bodystart="137" bodyend="142" declfile="dados.h" declline="165" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1a1c06927adcfe16630660a00e849fde2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* copia</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>copia</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>copia os dados de um estado para outro <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para um estaado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>estado clone </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="171" column="8" bodyfile="dados.c" bodystart="145" bodyend="156" declfile="dados.h" declline="171" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1acaa849f5a2ec1f74fc4eda97ab372b27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bot_fraco</definition>
+        <argsstring>(ESTADO *e, LL t)</argsstring>
+        <name>bot_fraco</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>comando jog com a heuristica da menor distancia <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ponteiro para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="176" column="6" bodyfile="dados.c" bodystart="159" bodyend="177" declfile="dados.h" declline="176" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8h_1a924d0b07a5fdc72efd6f5cb4e78093c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bot_medio</definition>
+        <argsstring>(ESTADO *e, LL t)</argsstring>
+        <name>bot_medio</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>realiza 9 jogadas do bo_fraco para determinar a melhor jogada </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="180" column="6" bodyfile="dados.c" bodystart="179" bodyend="197" declfile="dados.h" declline="180" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definição do estado e das funções que o manipulam </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>luisf<sp/>on<sp/>3/11/2020.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>PROJETO_DADOS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJETO_DADOS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="dados_8h_1ab8d2e03f1be6ed043ab77a0ea6d0c3fd" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>OK,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>COORDENADA_INVALIDA,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>JOGADA_INVALIDA,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>ERRO_LER_TAB,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>ERRO_ABRIR_FICHEIRO,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/><ref refid="dados_8h_1ab8d2e03f1be6ed043ab77a0ea6d0c3fd" kindref="member">ERROS</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>UM<sp/>=<sp/></highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>DOIS<sp/>=<sp/></highlight><highlight class="charliteral">&apos;2&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>VAZIO<sp/>=<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>BRANCA<sp/>=<sp/></highlight><highlight class="charliteral">&apos;*&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>PRETA<sp/>=<sp/></highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct_c_o_o_r_d_e_n_a_d_a" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>coluna;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linha;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="struct_j_o_g_a_d_a" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>jogador1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>jogador2;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/><ref refid="struct_j_o_g_a_d_a" kindref="compound">JOGADA</ref>;</highlight></codeline>
+<codeline lineno="52" refid="dados_8h_1a94c221d29a1760f008b7834093259b7d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="struct_j_o_g_a_d_a" kindref="compound">JOGADA</ref><sp/><ref refid="dados_8h_1a94c221d29a1760f008b7834093259b7d" kindref="member">JOGADAS</ref>[32];</highlight></codeline>
+<codeline lineno="56" refid="struct_e_s_t_a_d_o" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58" refid="struct_e_s_t_a_d_o_1ab56f0f1be16954d3768b4174d14c087d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref><sp/>tab[8][8];</highlight></codeline>
+<codeline lineno="60" refid="struct_e_s_t_a_d_o_1a4896a5c5c1f40b43fb795623327e3f47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/><ref refid="struct_e_s_t_a_d_o_1a4896a5c5c1f40b43fb795623327e3f47" kindref="member">ultima_jogada</ref>;</highlight></codeline>
+<codeline lineno="62" refid="struct_e_s_t_a_d_o_1afae43b87a488fad0f2b56a18bad31d18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dados_8h_1a94c221d29a1760f008b7834093259b7d" kindref="member">JOGADAS</ref><sp/><ref refid="struct_e_s_t_a_d_o_1afae43b87a488fad0f2b56a18bad31d18" kindref="member">jogadas</ref>;</highlight></codeline>
+<codeline lineno="64" refid="struct_e_s_t_a_d_o_1a261495728744647e618b4e623f5a4b7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_e_s_t_a_d_o_1a261495728744647e618b4e623f5a4b7a" kindref="member">num_jogadas</ref>;</highlight></codeline>
+<codeline lineno="66" refid="struct_e_s_t_a_d_o_1a5dd28e2e68b7aef2b6b7ea88e02eff58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_e_s_t_a_d_o_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kindref="member">jogador_atual</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref>;</highlight></codeline>
+<codeline lineno="72" refid="structlligada" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlligada" kindref="compound">lligada</ref><sp/>{</highlight></codeline>
+<codeline lineno="74" refid="structlligada_1ab770be201b07dc51dc6591c973c8b8e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/><ref refid="structlligada_1ab770be201b07dc51dc6591c973c8b8e0" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="76" refid="structlligada_1ae620cb307892f22905d79e0d5013f9e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlligada" kindref="compound">lligada</ref><sp/>*<ref refid="structlligada_1ae620cb307892f22905d79e0d5013f9e3" kindref="member">prox</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}<sp/>*<ref refid="dados_8h_1aa7a10dd77c416e44f15232d3e26086c5" kindref="member">LL</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*<ref refid="dados_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kindref="member">inicializar_estado</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1acc6c25533188a99cb69c12e7f2c406ef" kindref="member">obter_jogador_atual</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><ref refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref><sp/><ref refid="dados_8h_1a6faa68373203923729ed38657aa0f768" kindref="member">obter_estado_casa</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="103"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a6cd0b387bdee9e18003c78852394aa63" kindref="member">obter_numero_de_jogadas</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*estado);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="structlligada" kindref="compound">LL</ref><sp/><ref refid="dados_8h_1a9ed45c12e676bcd825ac17cc0b6c2124" kindref="member">criar_lista</ref>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><ref refid="structlligada" kindref="compound">LL</ref><sp/><ref refid="dados_8h_1a3a5211f8d4cd34243a3a6e91d6cbc8f2" kindref="member">insere_cabeca</ref><sp/>(<ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>v,<sp/><ref refid="structlligada" kindref="compound">LL</ref><sp/>t);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/><ref refid="dados_8h_1a660a5c936fd1706c040fe0e5d4f31f25" kindref="member">devolve_cabeca</ref>(<ref refid="structlligada" kindref="compound">LL</ref><sp/>t);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><ref refid="structlligada" kindref="compound">LL</ref><sp/><ref refid="dados_8h_1ab159cd6b637efeccf9ae0fa531e2260f" kindref="member">proximo</ref>(<ref refid="structlligada" kindref="compound">LL</ref><sp/>t);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><ref refid="structlligada" kindref="compound">LL</ref><sp/><ref refid="dados_8h_1a82ee51f4fe0ec59472bea9f47c7c4b46" kindref="member">remove_cabeca</ref>(<ref refid="structlligada" kindref="compound">LL</ref><sp/>t);</highlight></codeline>
+<codeline lineno="139"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1aede27ab39a75dd12f1c417919090583c" kindref="member">lista_esta_vazia</ref><sp/>(<ref refid="structlligada" kindref="compound">LL</ref><sp/>t);</highlight></codeline>
+<codeline lineno="147"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a972a9e8d2ae7ab66947907b9068c9986" kindref="member">validar_bot</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b);</highlight></codeline>
+<codeline lineno="153"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a8bbf17045f6fff45258a698f4bd6aa57" kindref="member">inception</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="159"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1af1704b4ad23e77613c228199ed06b7dc" kindref="member">inception2</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><ref refid="structlligada" kindref="compound">LL</ref><sp/><ref refid="dados_8h_1af44a9284a8bf9c4a4e07c3a4e2278b51" kindref="member">copiaL</ref>(<ref refid="structlligada" kindref="compound">LL</ref><sp/>t);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*<ref refid="dados_8h_1a1c06927adcfe16630660a00e849fde2b" kindref="member">copia</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="176"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1acaa849f5a2ec1f74fc4eda97ab372b27" kindref="member">bot_fraco</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*<sp/>e,<ref refid="structlligada" kindref="compound">LL</ref><sp/>t);</highlight></codeline>
+<codeline lineno="180"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a924d0b07a5fdc72efd6f5cb4e78093c1" kindref="member">bot_medio</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<ref refid="structlligada" kindref="compound">LL</ref><sp/>t);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//PROJETO_DADOS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dados.h"/>
+  </compounddef>
+</doxygen>

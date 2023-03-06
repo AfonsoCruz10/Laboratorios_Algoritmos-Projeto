@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structlligada" kind="struct" language="C++" prot="public">
+    <compoundname>lligada</compoundname>
+    <includes refid="dados_8h" local="no">dados.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlligada_1ab770be201b07dc51dc6591c973c8b8e0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA lligada::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Coordendas </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="74" column="16" bodyfile="dados.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlligada_1ae620cb307892f22905d79e0d5013f9e3" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structlligada" kindref="compound">lligada</ref> *</type>
+        <definition>struct lligada* lligada::prox</definition>
+        <argsstring></argsstring>
+        <name>prox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>struct listas ligadas </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dados.h" line="76" column="18" bodyfile="dados.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tipo de dados para o comando jog. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>lligada</label>
+        <link refid="structlligada"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>x</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>prox</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>COORDENADA</label>
+        <link refid="struct_c_o_o_r_d_e_n_a_d_a"/>
+      </node>
+    </collaborationgraph>
+    <location file="dados.h" line="72" column="22" bodyfile="dados.h" bodystart="72" bodyend="77"/>
+    <listofallmembers>
+      <member refid="structlligada_1ae620cb307892f22905d79e0d5013f9e3" prot="public" virt="non-virtual"><scope>lligada</scope><name>prox</name></member>
+      <member refid="structlligada_1ab770be201b07dc51dc6591c973c8b8e0" prot="public" virt="non-virtual"><scope>lligada</scope><name>x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
