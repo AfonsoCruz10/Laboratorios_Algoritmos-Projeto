@@ -2,7 +2,7 @@
 
 Implementação do jogo de tabuleiro rastros em c
 
-LCC PL3
+LCC PL3 "\n"
 GRUPO 6
 a91651 André Luis Ramos Pereira; 
 a91639 Afonso Brandao Cruz; 
