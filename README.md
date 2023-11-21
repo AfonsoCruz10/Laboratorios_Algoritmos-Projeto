@@ -8,12 +8,12 @@ a91651 André Luis Ramos Pereira;
 a91639 Afonso Brandao Cruz; 
 a91655 Luis Filipe Vieira Rodrigues; 
 
-##Enunciado do Projeto##
+## Enunciado do Projeto ##
 
 Laboratório de Algoritmia I
 Ano letivo 2019/20
 
-#Constituição dos grupos#
+# Constituição dos grupos #
 
 Os grupos deverão ser de 3 elementos, pertencendo todos ao mesmo turno prático.
 A constituição dos grupos deverá ser comunicada ao docente nas aulas da semana de 2 e 6 de Março através de uma folha com os números dos alunos e os nomes completos.
