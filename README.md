@@ -3,7 +3,7 @@
 Implementação do jogo de tabuleiro rastros em c.
 
 LCC PL3
-GRUPO 6
+GRUPO 6 
 a91651 André Luis Ramos Pereira; 
 a91639 Afonso Brandao Cruz; 
 a91655 Luis Filipe Vieira Rodrigues; 
@@ -14,31 +14,36 @@ Laboratório de Algoritmia I
 Ano letivo 2019/20
 
 Constituição dos grupos
+
 Os grupos deverão ser de 3 elementos, pertencendo todos ao mesmo turno prático.
 A constituição dos grupos deverá ser comunicada ao docente nas aulas da semana de 2 e 6 de Março através de uma folha com os números dos alunos e os nomes completos.
 O projeto será avaliado nas aulas da semana de 4 a 8 de Maio.
 
 Descrição
+
 Pretende-se implementar o jogo Rastros. Para descobrir as regras do jogo, clique aqui. O seu programa deverá permitir que dois jogadores, partilhando o mesmo teclado, o possam jogar. Os comandos deverão ser introduzidos através de um interpretador de comandos.
 
 Interpretador de comandos
+
 O seu programa deverá funcionar como um interpretador de comandos. Esta estratégia costuma ser chamada REPL (Read, Evaluate, Print, Loop). O seu interpretador deverá responder aos seguintes comandos:
 
-coordenada
+coordenada: 
 Tal como nas coordenadas de um tabuleiro de Xadrez: uma letra (a coluna) seguida de um algarismo (a linha). Neste caso, o programa deverá efetuar essa jogada desde que ela seja válida.
-gr nome_do_ficheiro
+gr nome_do_ficheiro: 
 O programa deverá gravar o estado do tabuleiro num ficheiro
-ler nome_do_ficheiro
+ler nome_do_ficheiro: 
 O programa deverá ler o estado do tabuleiro a partir do ficheiro
-movs
+movs: 
 O programa deverá imprimir a lista dos movimentos do jogo
-jog
+jog: 
 O seu programa deverá escolher a melhor jogada para o jogador atual
-pos numero_da_jogada
+pos numero_da_jogada: 
 O seu programa deverá permitir visualizar uma posição anterior através do seu número.
-Q
+Q: 
 O programa deverá acabar
+
 Formato do ficheiro
+
 O formato do ficheiro deve ser o seguinte:
 
 O estado do tabuleiro
