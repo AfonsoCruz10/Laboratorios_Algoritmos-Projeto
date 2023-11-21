@@ -1,4 +1,4 @@
-## ﻿Projeto_LA1 ##
+# ﻿Projeto_LA1 #
 
 LCC PL3
 
@@ -8,22 +8,22 @@ a91651 André Luis Ramos Pereira;
 a91639 Afonso Brandao Cruz; 
 a91655 Luis Filipe Vieira Rodrigues; 
 
-## Enunciado do Projeto ##
+# Enunciado do Projeto #
 
 Laboratório de Algoritmia I
 Ano letivo 2019/20
 
-# Constituição dos grupos #
+## Constituição dos grupos ##
 
 Os grupos deverão ser de 3 elementos, pertencendo todos ao mesmo turno prático.
 A constituição dos grupos deverá ser comunicada ao docente nas aulas da semana de 2 e 6 de Março através de uma folha com os números dos alunos e os nomes completos.
 O projeto será avaliado nas aulas da semana de 4 a 8 de Maio.
 
-#Descrição#
+## Descrição ##
 
-Pretende-se implementar o jogo Rastros. Para descobrir as regras do jogo, clique aqui. O seu programa deverá permitir que dois jogadores, partilhando o mesmo teclado, o possam jogar. Os comandos deverão ser introduzidos através de um interpretador de comandos.
+Pretende-se implementar o jogo Rastros. O seu programa deverá permitir que dois jogadores, partilhando o mesmo teclado, o possam jogar. Os comandos deverão ser introduzidos através de um interpretador de comandos.
 
-#Interpretador de comandos#
+## Interpretador de comandos ##
 
 O seu programa deverá funcionar como um interpretador de comandos. Esta estratégia costuma ser chamada REPL (Read, Evaluate, Print, Loop). O seu interpretador deverá responder aos seguintes comandos:
 
@@ -42,7 +42,7 @@ O seu programa deverá permitir visualizar uma posição anterior através do se
 Q: 
 O programa deverá acabar
 
-#Formato do ficheiro#
+## Formato do ficheiro ##
 
 O formato do ficheiro deve ser o seguinte:
 
@@ -52,7 +52,7 @@ Uma linha em branco
 
 A lista de movimentos
 
-Formato do estado do tabuleiro
+## Formato do estado do tabuleiro ##
 
 O estado do tabuleiro deverá ser de oito linhas. Cada casa vazia contém um ponto, uma casa de uma jogada antiga um cardinal e a casa atual um asterisco. Para ajudar a reconhecer as posições vencedoras, o canto inferior esquerdo contém um 1 (posição vencedora para o jogador 1) enquanto que o canto superior direito contém um 2. Assim, a configuração inicial deve ser a seguinte:
 
@@ -75,14 +75,14 @@ Se o jogador 1 jogar d4, a posição passaria a ser:
 ........
 1.......
 
-#Lista de movimentos#
+## Lista de movimentos ##
 
 A lista de movimentos deverá ser dada por tantas linhas como jogadas. Cada linha começa com o número da jogada (sempre com dois algarismos) seguida dos movimentos de cada jogador. Assim se os jogadores fizeram os seguintes movimentos: d4, e4, e3, a lista de movimentos seria a seguinte:
 
 01: d4 e4
 02: e3
 
-#Exemplo completo#
+## Exemplo completo ##
 
 Segue um exemplo completo do estado do ficheiro onde foram executados os seguintes comandos:
 
@@ -92,7 +92,7 @@ e3
 f4
 f3
 
-#gravar pos#
+gravar pos
 
 A seguir a estes comandos, este deveria ser o conteúdo do ficheiro pos:
 
@@ -109,7 +109,7 @@ A seguir a estes comandos, este deveria ser o conteúdo do ficheiro pos:
 02: e3 f4
 03: f3
 
-#Visualização de posições anteriores#
+## Visualização de posições anteriores ##
 
 A visualização de posições anteriores será feita conforme o número da jogada, sendo 0 a posição inicial. Usando o exemplo completo da secção anterior, o comando pos 2 deveria mostrar o seguinte tabuleiro:
 
@@ -122,7 +122,7 @@ A visualização de posições anteriores será feita conforme o número da joga
 ........
 1.......
 
-#Bot#
+## Bot ##
 A título de bonificação, os grupos que quiserem deverão submeter o seu programa para um torneios. Cada programa deverá:
 
 Ler o estado do jogo a partir de um ficheiro. O nome desse ficheiro deverá ser passado como parâmetro ao programa;
@@ -133,7 +133,7 @@ Assim, se o programa for invocado da seguinte forma:
 ./bot jog01 jog02
 Então ele deverá ler o estado do ficheiro jog01, jogar e gravar o estado no ficheiro jog02.
 
-#Torneio#
+## Torneio ##
 
 O torneio funcionará com as seguintes regras:
 
